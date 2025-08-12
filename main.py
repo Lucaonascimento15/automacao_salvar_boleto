@@ -45,7 +45,7 @@ time.sleep(3)
 
 pyautogui.press('enter')
 
-print('Script executado com sucesso!')
+print('Script executado com sucesso!!')
 
 
 
