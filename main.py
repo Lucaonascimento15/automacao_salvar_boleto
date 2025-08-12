@@ -1,9 +1,11 @@
 import pyautogui
 import time
+from dotenv import load_dotenv
+import os
 
 #https://clientes.morar.com.br/Login.aspx
 login = '18001715795'
-password = 'Denizegatinha@2027'
+senha = os.getenv("MINHA_SENHA")
 
 pyautogui.press('win')
 time.sleep(4)
@@ -20,7 +22,7 @@ pyautogui.write(login)
 time.sleep(3)
 pyautogui.press('tab')
 time.sleep(3)
-pyautogui.write(password)
+pyautogui.write(senha)
 time.sleep(3)
 pyautogui.press('enter')
 time.sleep(3)
